@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java -version)",
+      "Bash(javac -version)",
+      "Read(//d/MySQL/mysql-connector-j-8.1.0//**)",
+      "Bash(where tomcat *)",
+      "Read(//d//**)",
+      "Bash(ls /d/apache*)",
+      "Bash(mysqld --version)",
+      "Bash(mysql *)",
+      "Bash(jar tf *)",
+      "Bash(javac -cp '/d/eclipse/plugins/org.eclipse.jetty.servlet-api_4.0.9.jar;/d/bandizip/第十二章\\(1\\)/1/WebContent/WEB-INF/lib/mysql-connector-j-8.1.0.jar;/d/bandizip/第十二章\\(1\\)/1/WebContent/WEB-INF/lib/jstl-api-1.2.jar' -d '/d/bandizip/第十二章\\(1\\)/1/build/classes' -sourcepath '/d/bandizip/第十二章\\(1\\)/1/src' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/*.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/dao/*.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/filter/*.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/servlet/*.java')",
+      "Bash(javac -cp 'd:/eclipse/plugins/org.eclipse.jetty.servlet-api_4.0.9.jar;d:/bandizip/第十二章\\(1\\)/1/WebContent/WEB-INF/lib/mysql-connector-j-8.1.0.jar;d:/bandizip/第十二章\\(1\\)/1/WebContent/WEB-INF/lib/jstl-api-1.2.jar' -d '/d/bandizip/第十二章\\(1\\)/1/build/classes' -sourcepath '/d/bandizip/第十二章\\(1\\)/1/src' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/User.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/BillGroup.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/GroupMember.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/Expense.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/ExpenseShare.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/Settlement.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/model/UserBalance.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/dao/DBUtil.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/dao/UserDAO.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/dao/GroupDAO.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/dao/ExpenseDAO.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/filter/EncodingFilter.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/servlet/LoginServlet.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/servlet/LogoutServlet.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/servlet/GroupServlet.java' '/d/bandizip/第十二章\\(1\\)/1/src/com/splitbill/servlet/ExpenseServlet.java')",
+      "Bash(xxd -l 20 \"/d/bandizip/第十二章\\(1\\)/1/WebContent/index.jsp\")",
+      "Bash(iconv -f GBK -t UTF-8)",
+      "Bash(tasklist /FI \"IMAGENAME eq tomcat*\")",
+      "Bash(tasklist /FI \"IMAGENAME eq java*\")",
+      "Bash(tasklist /V /FI \"IMAGENAME eq java.exe\")",
+      "Bash(wmic process *)",
+      "Bash(javac -cp \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar\" -d /tmp C:/Users/hyhsh/AppData/Local/Temp/TestConn.java)",
+      "Bash(java -cp \"/tmp;D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar\" TestConn)",
+      "Bash(javac -cp \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar\" -d /tmp /tmp/TestConn.java)",
+      "Bash(javac -cp \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar\" -d \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\src\\\\com\\\\splitbill\\\\dao\\\\DBUtil.java\")",
+      "Bash(echo \"=== Compile status: $? ===\")",
+      "Bash(javac -cp \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar;D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" -d \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\src\\\\com\\\\splitbill\\\\dao\\\\GroupDAO.java\")",
+      "Bash(echo \"GroupDAO compile: $?\")",
+      "Bash(javac -cp \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar;D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" -d \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\src\\\\com\\\\splitbill\\\\servlet\\\\GroupServlet.java\")",
+      "Bash(echo \"GroupServlet compile: $?\")",
+      "Bash(javac -cp \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar;D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes;C:\\\\Users\\\\hyhsh\\\\AppData\\\\Local\\\\Temp\\\\servlet-api.jar\" -d \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\src\\\\com\\\\splitbill\\\\servlet\\\\GroupServlet.java\")",
+      "Bash(echo \"GroupDAO: $?\")",
+      "Bash(javac -cp \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\WebContent\\\\WEB-INF\\\\lib\\\\mysql-connector-j-8.1.0.jar;D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes;C:\\\\Users\\\\hyhsh\\\\AppData\\\\Local\\\\Temp\\\\servlet-api.jar\" -d \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\src\\\\com\\\\splitbill\\\\servlet\\\\ExpenseServlet.java\")",
+      "Bash(echo \"ExpenseServlet: $?\")",
+      "Bash(javac -cp \"C:\\\\Users\\\\hyhsh\\\\AppData\\\\Local\\\\Temp\\\\servlet-api.jar;D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" -d \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\build\\\\classes\" \"D:\\\\bandizip\\\\第十二章\\(1\\)\\\\1\\\\src\\\\com\\\\splitbill\\\\servlet\\\\LoginServlet.java\")",
+      "Bash(echo \"LoginServlet compile: $?\")",
+      "Read(//d/bandizip/第十二章\\(1\\)/1/**)"
+    ]
+  }
+}

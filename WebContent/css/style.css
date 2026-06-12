@@ -1,0 +1,427 @@
+/* ========== 基础重置 ========== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+a { color: #4a90d9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ========== 导航栏 ========== */
+.nav {
+    background: #fff;
+    border-bottom: 1px solid #e4e7ed;
+    padding: 0 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title { font-size: 20px; font-weight: 700; color: #2c3e50; }
+.nav-user { font-size: 14px; color: #666; }
+.nav-user a { margin-left: 10px; }
+
+/* ========== 容器 ========== */
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
+
+/* ========== 页面标题 ========== */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.page-header h2 { font-size: 24px; color: #2c3e50; }
+.header-actions { display: flex; gap: 10px; }
+
+/* ========== 按钮 ========== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+.btn:hover { text-decoration: none; opacity: 0.9; }
+.btn-primary { background: #4a90d9; color: #fff; }
+.btn-primary:hover { background: #357abd; }
+.btn-secondary { background: #e8ecf1; color: #555; }
+.btn-secondary:hover { background: #d5dce4; }
+.btn-small {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    background: #e8ecf1;
+    color: #555;
+}
+.btn-small:hover { background: #d5dce4; text-decoration: none; }
+.btn-danger { background: #dc2626; color: #fff; }
+.btn-danger:hover { background: #b91c1c; }
+
+/* ========== 表单 ========== */
+.form-group { margin-bottom: 18px; }
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #444;
+}
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4a90d9;
+    box-shadow: 0 0 0 3px rgba(74,144,217,0.15);
+}
+textarea { resize: vertical; font-family: inherit; }
+
+.form-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border: 1px solid #e8ecf1;
+}
+.form-card h3 { margin-bottom: 16px; font-size: 16px; color: #555; }
+
+/* ========== 复选框组 ========== */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: #f5f7fa;
+    border: 1px solid #e4e7ed;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+}
+.checkbox-label:hover { border-color: #4a90d9; background: #eef4fb; }
+.checkbox-label input[type="checkbox"] { width: 16px; height: 16px; }
+
+/* ========== 消息 ========== */
+.msg {
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+.msg.error { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
+.msg.success { background: #f0fdf4; color: #16a34a; border: 1px solid #bbf7d0; }
+
+/* ========== 群组卡片列表 ========== */
+.group-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+}
+.group-card {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e8ecf1;
+    transition: all 0.2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.group-card:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-color: #c8d0db;
+    transform: translateY(-2px);
+}
+.group-card-body { padding: 20px; }
+.group-card-body h3 { font-size: 18px; margin-bottom: 8px; color: #2c3e50; }
+.group-desc { font-size: 13px; color: #888; margin-bottom: 12px; }
+.group-meta { display: flex; gap: 16px; font-size: 12px; color: #999; flex-wrap: wrap; }
+
+/* ========== 空状态 ========== */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+}
+.empty-state p { margin-bottom: 8px; font-size: 15px; }
+
+/* ========== 卡片 ========== */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e8ecf1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    overflow: hidden;
+}
+.card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f2f5;
+    background: #fafbfc;
+}
+.card-header h3 { font-size: 16px; color: #444; }
+
+/* ========== 表格 ========== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.table th {
+    text-align: left;
+    padding: 12px 20px;
+    background: #fafbfc;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 1px solid #e8ecf1;
+}
+.table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f5f7fa;
+}
+.table tr:hover { background: #fafbfc; }
+
+/* ========== 账单条目 ========== */
+.expense-item {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f0f2f5;
+}
+.expense-item:last-child { border-bottom: none; }
+.expense-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.expense-header strong { font-size: 15px; }
+.expense-amount { font-size: 16px; font-weight: 700; color: #e67e22; }
+.expense-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 8px;
+}
+.expense-shares {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+}
+.share-label { color: #888; }
+.share-tag {
+    background: #f0f4f9;
+    color: #555;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+/* ========== 结算 ========== */
+.settlement-preview {
+    padding: 16px 20px;
+}
+.settlement-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #f5f7fa;
+}
+.settlement-item:last-child { border-bottom: none; }
+.settlement-amount { font-weight: 700; font-size: 15px; margin-left: auto; color: #e67e22; }
+
+/* 结算表格行样式 */
+.settlement-table { table-layout: auto; }
+.settlement-table td {
+    vertical-align: middle;
+    padding: 14px 20px;
+}
+.settlement-table th {
+    padding: 10px 20px;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.settlement-table .from-user { color: #dc2626; font-weight: 600; font-size: 15px; }
+.settlement-table .to-user { color: #16a34a; font-weight: 600; font-size: 15px; }
+.settlement-table .settlement-money { font-size: 16px; font-weight: 700; color: #e67e22; white-space: nowrap; }
+.settlement-table td:last-child { white-space: nowrap; }
+
+.settlement-note {
+    padding: 12px 20px;
+    background: #fefce8;
+    border-top: 1px solid #f0f2f5;
+    font-size: 13px;
+    color: #a16207;
+}
+
+/* ========== 网格布局 ========== */
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .grid-2col { grid-template-columns: 1fr; }
+    .group-list { grid-template-columns: 1fr; }
+}
+
+/* ========== 颜色 ========== */
+.text-green { color: #16a34a; font-weight: 600; }
+.text-red { color: #dc2626; font-weight: 600; }
+.text-muted { color: #999; font-size: 13px; }
+
+/* ========== 登录页面 ========== */
+.login-body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+.login-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 36px 32px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+.login-box h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 4px;
+    color: #2c3e50;
+}
+.login-box .subtitle {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+.switch-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #888;
+}
+.switch-link a { font-weight: 600; }
+
+/* ========== 搜索结果 ========== */
+.search-results {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e8ecf1;
+}
+.search-results h4 { font-size: 14px; color: #666; margin-bottom: 8px; }
+.user-row {
+    padding: 6px 0;
+    font-size: 14px;
+    color: #444;
+}
+.group-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f2f5;
+    flex-wrap: wrap;
+}
+.group-row:last-child { border-bottom: none; }
+.group-row .group-name { flex: 1; min-width: 120px; }
+.group-row .group-meta { font-size: 12px; color: #999; }
+.group-row .group-id { font-size: 12px; color: #999; background: #f5f7fa; padding: 2px 8px; border-radius: 4px; }
+.group-row form { margin-left: auto; }
+
+/* ========== 结算确认功能 ========== */
+.btn-confirm {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    background: #16a34a;
+    color: #fff;
+}
+.btn-confirm:hover { background: #15803d; }
+
+.confirmed-badge {
+    color: #16a34a;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.pending-badge {
+    color: #d97706;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* 转账记录条目 */
+.transfer-item {
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f2f5;
+    background: #fafcf8;
+    border-left: 3px solid #16a34a;
+}
+.transfer-item:last-child { border-bottom: none; }
+.transfer-item .transfer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.transfer-item .transfer-desc { font-size: 14px; }
+.transfer-item .transfer-amount { font-size: 16px; font-weight: 700; color: #16a34a; }
+.transfer-item .transfer-meta { font-size: 12px; color: #999; }
+
+/* 结算状态容器 */
+.settlement-status { margin-left: auto; display: flex; align-items: center; }
